@@ -1,0 +1,99 @@
+# _config.yml
+title: Fabian Sastoque
+title_separator: "|"
+subtitle: "AI Engineer Journey"
+email: fsastoque@gmail.com
+description: >-
+  Senior Fullstack Developer → AI Engineer.
+  15+ años construyendo sistemas. Ahora construyo sistemas inteligentes.
+
+baseurl: ""
+url: "https://fabian-sastoque.github.io"
+
+# Author
+author:
+  name: "Fabian Sastoque"
+  avatar: "/assets/images/avatar.jpg" # 200x200px
+  bio: "Senior Fullstack → AI Engineer. Building intelligent systems."
+  location: "Bogotá, Colombia"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/fsastoque"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/tu-perfil"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:tu@email.com"
+    - label: "Journey"
+      icon: "fas fa-fw fa-rocket"
+      url: "https://github.com/fsastoque/ai-engineer-journey"
+
+# Reading Files
+include:
+  - _pages
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+      toc: true
+      toc_sticky: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: false
+      share: true
+
+# Build settings
+markdown: kramdown
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-seo-tag
+
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# Links sociales
+github_username: tu-username
+linkedin_username: tu-perfil
+twitter_username: tu-handle
+
+
+  

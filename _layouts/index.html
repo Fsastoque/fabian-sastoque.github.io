@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Nombre | AI Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #2563eb;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            color: #666;
+            margin: 10px 0;
+        }
+        
+        .links {
+            margin-top: 20px;
+        }
+        
+        .links a {
+            margin: 0 10px;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .links a:hover {
+            text-decoration: underline;
+        }
+        
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #2563eb;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 10px;
+        }
+        
+        .post {
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .post:last-child {
+            border-bottom: none;
+        }
+        
+        .post h3 {
+            color: #1e293b;
+            margin-bottom: 8px;
+        }
+        
+        .post h3 a {
+            color: #1e293b;
+            text-decoration: none;
+        }
+        
+        .post h3 a:hover {
+            color: #2563eb;
+        }
+        
+        .post .date {
+            color: #64748b;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        
+        .post p {
+            color: #475569;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #dbeafe;
+            color: #1e40af;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin: 5px 5px 5px 0;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fabian Alfonso Sastoque C</h1>
+            <p><strong>Senior Fullstack Developer → AI Engineer</strong></p>
+            <p>15+ años construyendo sistemas. Ahora construyo sistemas inteligentes.</p>
+            <div class="links">
+                <a href="https://github.com/tu-username" target="_blank">GitHub</a> |
+                <a href="https://linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a> |
+                <a href="mailto:tu@email.com">Email</a> |
+                <a href="https://github.com/tu-username/ai-engineer-journey" target="_blank">Journey</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>📚 Blog Posts</h2>
+            
+            <div class="post">
+                <h3><a href="posts/day-01-why-ai.html">Por qué AI Engineering</a></h3>
+                <div class="date">📅 16 Octubre 2025 · ⏱️ 5 min lectura</div>
+                <p>
+                    Después de 15+ años en desarrollo fullstack, decidí especializarme en 
+                    AI Engineering. No es una transición de carrera, es una evolución natural...
+                </p>
+                <span class="badge">Career</span>
+                <span class="badge">AI</span>
+            </div>
+
+            <div class="post">
+                <h3><a href="posts/numpy-fundamentals.html">NumPy para ML: Lo que nadie te cuenta</a></h3>
+                <div class="date">📅 17 Octubre 2025 · ⏱️ 8 min lectura</div>
+                <p>
+                    Broadcasting, vectorización, y por qué shape es más importante que el código. 
+                    Mis primeras 10 horas con NumPy...
+                </p>
+                <span class="badge">Tutorial</span>
+                <span class="badge">NumPy</span>
+            </div>
+
+            <div class="post">
+                <h3><a href="#">🚧 Próximamente: Mi primer modelo ML en producción</a></h3>
+                <div class="date">📅 Coming soon...</div>
+                <p>De Jupyter notebook a API. Los errores que cometí y lo que aprendí.</p>
+                <span class="badge">MLOps</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>🚀 Proyectos Destacados</h2>
+            
+            <div class="post">
+                <h3><a href="https://github.com/tu-username/ai-engineer-journey" target="_blank">AI Engineer Journey</a></h3>
+                <p>
+                    Mi roadmap completo de 20 semanas. Código, proyectos y aprendizajes 
+                    documentados día a día. Build in public.
+                </p>
+                <span class="badge">Python</span>
+                <span class="badge">ML</span>
+                <span class="badge">Portfolio</span>
+            </div>
+
+            <div class="post">
+                <h3><a href="#">🚧 RAG Chatbot (En desarrollo - Semana 12)</a></h3>
+                <p>
+                    Sistema RAG production-ready con pgvector, LlamaIndex y Gemini. 
+                    Latencia <500ms, costo $3/mes.
+                </p>
+                <span class="badge">RAG</span>
+                <span class="badge">LLMs</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>💼 Sobre mí</h2>
+            <p>
+                Soy un desarrollador fullstack con 15+ años de experiencia construyendo 
+                aplicaciones web escalables. Mi stack incluye Python, JavaScript, React, 
+                PostgreSQL, y todas las herramientas modernas de DevOps.
+            </p>
+            <p style="margin-top: 15px;">
+                Ahora estoy en transición hacia AI Engineering. No estoy empezando de cero—
+                estoy aplicando mi experiencia en arquitectura de software a sistemas de IA.
+            </p>
+            <p style="margin-top: 15px;">
+                Mi objetivo: construir sistemas de IA completos que vayan a producción, 
+                no solo modelos que viven en notebooks.
+            </p>
+            <p style="margin-top: 15px;">
+                <strong>Lo que me hace diferente:</strong> 15 años de experience shipping 
+                productos + habilidades ML/AI emergentes = Senior AI Engineer desde día 1.
+            </p>
+        </section>
+
+        <footer>
+            <p>© 2025 Fabian Sastoque. Building in public.</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">
+                Hecho con HTML, CSS y mucho café ☕
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
