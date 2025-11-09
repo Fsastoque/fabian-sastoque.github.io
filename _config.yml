@@ -9,14 +9,20 @@ description: >-
 
 url: "https://fabian-sastoque.github.io"
 baseurl: ""
+repository: "Fsastoque/fabian-sastoque.github.io"
+
 # Permalink
-permalink: /:categories/:title/
+#permalink: /:categories/:title/
 
 # Skin del tema (color)
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "default" 
+# "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Búsqueda en el sitio
 search: true
+
+#Thema
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
 
 # Author
 author:
@@ -57,11 +63,38 @@ footer:
 # Reading Files
 include:
   - _pages
+  - .htaccess
+
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
 
 # Collections
 collections:
   posts:
     output: true
+    permalink: /:categories/:title/
   projects:
     output: true
     permalink: /:collection/:path/
@@ -81,6 +114,8 @@ defaults:
       related: true
       toc: true
       toc_sticky: true
+      classes: wide
+
   # _pages
   - scope:
       path: ""
@@ -88,6 +123,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+
   # _projects
   - scope:
       path: ""
@@ -97,34 +133,6 @@ defaults:
       author_profile: false
       share: true
 
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layouts:
-    category: archive
-    tag: archive
-  permalinks:
-    category: /categories/:name/
-    tag: /tags/:name/
-
-
-# Build settings
-markdown: kramdown
-
-#Thema
-remote_theme: "mmistakes/minimal-mistakes@4.27.3"
-
-# Plugins
-plugins:
-  - jekyll-archives
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-  - jekyll-seo-tag
-
 # Archives
 category_archive:
   type: liquid
@@ -132,6 +140,43 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+#jekyll-archives:
+#  enabled:
+#    - categories
+#    - tags
+#  layouts:
+#    category: archive
+#    tag: archive
+#  permalinks:
+#    category: /categories/:name/
+#    tag: /tags/:name/
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title/
+
+# Plugins
+plugins:
+  #- jekyll-archives
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+  #- jekyll-seo-tag
+
+# Pagination
+paginate: 10
+paginate_path: /page:num/
+
+#SEO
+social:
+  type: Person
+  name: Fabian Sastoque
+  links:
+    - "https://github.com/Fsastoque"
+    - "https://www.linkedin.com/in/fabian-sastoque-56478582"
 
 #Categorias
 categories:

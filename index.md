@@ -5,16 +5,13 @@ header:
   overlay_image: /assets/images/header-image.jpg
   overlay_filter: 0.5
   caption: "Foto por [**Unsplash**](https://unsplash.com)"
+  actions:
+    - label: "Ver Journey"
+      url: "https://github.com/Fsastoque/AI-Engineer"
+  caption: "De Full Stack a AI Engineer"
+excerpt: "15+ años construyendo sistemas. Ahora construyo sistemas inteligentes."
 author_profile: false
 ---
-
-***
-# Fabian Alfonso Sastoque Cubides
-
-**Senior Fullstack Developer → AI Engineer**  
-*15+ años construyendo sistemas. Ahora construyo sistemas inteligentes.*
-***
-
 ## 📚 Blog Posts
 
 ### [Por qué AI Engineering](posts/2025-10-20-why-ai-at.md)
