@@ -1,16 +1,23 @@
+---
+title: "Fabian Sastoque | AI Engineer"
+layout: home
+header:
+  overlay_image: /assets/images/header-image.jpg
+  overlay_filter: 0.5
+  caption: "Foto por [**Unsplash**](https://unsplash.com)"
+author_profile: false
+---
+
 ***
-# Fabian Alfonso Sastoque C
+# Fabian Alfonso Sastoque Cubides
 
 **Senior Fullstack Developer → AI Engineer**  
 *15+ años construyendo sistemas. Ahora construyo sistemas inteligentes.*
-
-[GitHub](https://github.com/Fsastoque) | [LinkedIn](https://www.linkedin.com/in/fabian-sastoque-56478582?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) | [Email](mailto:fsastoque@gmail.com) | [Journey](https://github.com/Fsastoque/AI-Engineer)
-
 ***
 
 ## 📚 Blog Posts
 
-### [Por qué AI Engineering](_posts/2025-10-20-why-ai-at.md)
+### [Por qué AI Engineering](posts/2025-10-20-why-ai-at.md)
 **📅 20 Octubre 2025 · ⏱️ 5 min lectura**  
 Después de 15+ años en desarrollo fullstack, decidí especializarme en AI Engineering. No es una transición de carrera, es una evolución natural...  
 `Career` `AI`

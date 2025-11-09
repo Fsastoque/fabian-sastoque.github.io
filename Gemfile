@@ -6,6 +6,6 @@ gem "github-pages", group: :jekyll_plugins
 gem "jekyll-include-cache", group: :jekyll_plugins
 
 gem "jekyll"
-gem "minima"
+#gem "minima"
 
 # gem "rails"

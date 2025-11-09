@@ -1,4 +1,4 @@
-# _config.yml
+locale: "es-CO"
 title: Fabian Sastoque
 title_separator: "|"
 subtitle: "AI Engineer Journey"
@@ -7,28 +7,52 @@ description: >-
   Senior Fullstack Developer → AI Engineer.
   15+ años construyendo sistemas. Ahora construyo sistemas inteligentes.
 
-baseurl: ""
 url: "https://fabian-sastoque.github.io"
+baseurl: ""
+# Permalink
+permalink: /:categories/:title/
+
+# Skin del tema (color)
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Búsqueda en el sitio
+search: true
 
 # Author
 author:
   name: "Fabian Sastoque"
-  avatar: "/assets/images/avatar.jpg" # 200x200px
+  avatar: "/assets/images/avatar.png" # 200x200px
   bio: "Senior Fullstack → AI Engineer. Building intelligent systems."
   location: "Bogotá, Colombia"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/fsastoque"
+      url: "https://github.com/Fsastoque"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/tu-perfil"
+      url: "https://www.linkedin.com/in/fabian-sastoque-56478582?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
       url: "mailto:tu@email.com"
     - label: "Journey"
       icon: "fas fa-fw fa-rocket"
-      url: "https://github.com/fsastoque/ai-engineer-journey"
+      url: "https://github.com/Fsastoque/AI-Engineer"
+
+# Footer
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/tuusuario"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Fsastoque"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/fabian-sastoque-56478582?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:tu@email.com"
 
 # Reading Files
 include:
@@ -36,6 +60,8 @@ include:
 
 # Collections
 collections:
+  posts:
+    output: true
   projects:
     output: true
     permalink: /:collection/:path/
@@ -57,7 +83,7 @@ defaults:
       toc_sticky: true
   # _pages
   - scope:
-      path: "_pages"
+      path: ""
       type: pages
     values:
       layout: single
@@ -71,10 +97,27 @@ defaults:
       author_profile: false
       share: true
 
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive
+    tag: archive
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+
+
 # Build settings
 markdown: kramdown
+
+#Thema
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
+
 # Plugins
 plugins:
+  - jekyll-archives
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
@@ -90,9 +133,17 @@ tag_archive:
   type: liquid
   path: /tags/
 
+#Categorias
+categories:
+  - learning        # Tu journey, progreso, reflexiones
+  - tutorials       # Guías técnicas paso a paso
+  - projects        # Showcase de proyectos
+  - career          # Transición, consejos, industria
+  - tools           # Reviews de herramientas, setup
+
 # Links sociales
-github_username: tu-username
-linkedin_username: tu-perfil
+github_username: https://github.com/Fsastoque
+linkedin_username: https://www.linkedin.com/in/fabian-sastoque-56478582?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
 twitter_username: tu-handle
 
 
